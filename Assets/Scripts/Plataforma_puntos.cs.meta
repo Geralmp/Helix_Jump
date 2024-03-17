@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5b9d1d158aa9cc640a96eccef19b8d47
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - PuntajePJ: {instanceID: 0}
+  - PlataformaProp1: {instanceID: 0}
+  - PlataformaProp2: {instanceID: 0}
+  - PlataformaProp3: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

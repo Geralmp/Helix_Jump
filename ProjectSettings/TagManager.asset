@@ -8,6 +8,8 @@ TagManager:
   - Plataforma_perder
   - Plataforma
   - Plataforma_Ganador
+  - winner
+  - winnerr
   layers:
   - Default
   - TransparentFX

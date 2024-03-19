@@ -5,6 +5,8 @@ public class Jugador : MonoBehaviour
 {
     public float JumpSpeed;
     private bool isDead = false;
+    private bool isWinner = false;
+
     private Rigidbody rb;
 
     private void Awake()
@@ -19,16 +21,26 @@ public class Jugador : MonoBehaviour
             rb.AddForce(Vector3.up * JumpSpeed, ForceMode.Impulse);
         }
 
-        if (collision.gameObject.CompareTag("Plataforma_perder") && !isDead) // Verificar si ya no está muerto
+        if (collision.gameObject.CompareTag("Plataforma_perder") && !isDead) 
         {
             isDead = true;
             GameOver();
+        }
+
+        if (collision.gameObject.CompareTag("winnerr") && !isDead) 
+        {
+            isWinner = false;
+            winner();
         }
     }
 
     private void GameOver()
     {
-        // Añadir aquí cualquier acción adicional que necesites antes de cargar la escena de Game Over
         SceneManager.LoadScene("GameOverScene");
+    }
+
+    private void winner()
+    {
+        SceneManager.LoadScene("winner");
     }
 }

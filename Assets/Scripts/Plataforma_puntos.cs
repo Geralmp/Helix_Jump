@@ -36,6 +36,6 @@ public class Plataforma_puntos : MonoBehaviour
     void ActualizarTextoPuntos()
     {
         // Actualiza el texto de puntos con el valor actual del puntaje
-        textoPuntos.text = "Puntos: " + PuntajePJ.PlayerPuntos.ToString();
+        textoPuntos.text = "" + PuntajePJ.PlayerPuntos.ToString();
     }
 }

@@ -7,6 +7,7 @@ TagManager:
   - Plataforma_invisible
   - Plataforma_perder
   - Plataforma
+  - Plataforma_Ganador
   layers:
   - Default
   - TransparentFX

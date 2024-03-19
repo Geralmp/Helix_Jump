@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movimiento_plataforma : MonoBehaviour
+public class moveController : MonoBehaviour
 {
     public Vector3 rotationPercentage; // Porcentajes de rotación para cada eje
     public float speed;
@@ -21,13 +21,14 @@ public class Movimiento_plataforma : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            float rotationAmount = speed * Time.deltaTime * rotationPercentage.y; // Aplicar porcentaje de rotación en Y
-            this.transform.Rotate(0, rotationAmount, 0, Space.Self);
+            float rotationAmount = speed * Time.deltaTime * rotationPercentage.z; // Aplicar porcentaje de rotación en y
+            this.transform.Rotate(0, 0, rotationAmount, Space.Self);
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            float rotationAmount = -speed * Time.deltaTime * rotationPercentage.y; // Aplicar porcentaje de rotación en Y
-            this.transform.Rotate(0, rotationAmount, 0, Space.Self);
+            float rotationAmount = -speed * Time.deltaTime * rotationPercentage.z; // Aplicar porcentaje de rotación en y
+            this.transform.Rotate(0, 0, rotationAmount, Space.Self);
         }
-    }
+
+            }
 }

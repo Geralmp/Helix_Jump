@@ -10,6 +10,7 @@ TagManager:
   - Plataforma_Ganador
   - winner
   - winnerr
+  - gema
   layers:
   - Default
   - TransparentFX
